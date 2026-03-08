@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { AUTH_COOKIE_NAME } from "@/lib/auth-constants";
 import { decodeSession } from "@/lib/session";
-import LogoutButton from "./logout-button";
+import LogoutButton from "@/components/admin/logout-button";
 
 export default async function AdminPage() {
   const cookieStore = await cookies();
